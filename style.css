@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    position: relative;
+}
+
+#navbar li {
+    padding: 5px;
+    border-top: 1px solid slategray;
+    list-style: none;
+}
+
+#navbar {
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    min-width: 290px;
+    border-right: 3px solid slategray;
+}
+
+#navbar header {
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    width: 10.6em;
+    background-color: aliceblue;
+    font-size: 28px;
+}
+
+#navbar ul {
+    height: 92%;
+    line-height:2;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.nav-link {
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+#main-doc {
+    width: 70%;
+    margin: 40px;
+    float: right;
+}
+
+#main-doc header {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+
+#main-doc article {
+    color: #4d4e53;
+    ;
+}
+
+#main-doc p {
+    padding: 10px 10px;
+    ;
+}
+
+#main-doc ul {
+    padding: 10px 70px;
+}
+
+#main-doc li {
+    padding: 5px;
+}
+
+code {
+    display: block;
+    background: black;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    color: aliceblue;
+    text-align: left;
+    padding: 20px;
+}
+
+p {
+    margin: 10px;
+}
+
+@media(max-width: 768px) {
+
+    #navbar,
+    #navbar ul {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        background: wheat;
+        position: fixed;
+        z-index: 1;
+        border-right: none;
+    }
+    #main-doc {
+        margin: 10rem 0px 10rem 0rem;
+        width: 100%;
+        padding: 20px;
+        float: none;
+    }
+    #navbar header {
+        width: 100%;
+    }
+    code {
+        display: block;
+        margin: 0 auto;
+        word-wrap: none;
+    }
+}
+
+@media( max-width: 1200px) {
+    #navbar,
+    #navbar ul {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        background: wheat;
+        position: fixed;
+        z-index: 1;
+        border-right: none;
+
+    }
+    #main-doc {
+        margin: 10rem 0px 10rem 0rem;
+        width: 100%;
+        padding: 20px;
+        float: none;
+    }
+    #navbar header {
+        width: 100%;
+    }
+    code {
+        display: block;
+        word-wrap: normal;
+        margin: auto;
+    }
+}
